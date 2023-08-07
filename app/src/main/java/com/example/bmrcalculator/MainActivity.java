@@ -267,3 +267,4 @@ public class MainActivity extends AppCompatActivity {
         while(thread.isAlive()){}
     }
 }
+//test
