@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModifyPage">
+
+    <TextView
+        android:id="@+id/nameText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="61dp"
+        android:text="Name:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nameInput3"
+        app:layout_constraintEnd_toStartOf="@+id/nameInput3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nameInput3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nameText3"
+        app:layout_constraintTop_toBottomOf="@+id/titleText3" />
+
+    <EditText
+        android:id="@+id/heightInput3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="hight"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/weightInput3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/heightText3"
+        app:layout_constraintTop_toBottomOf="@+id/ageInput3" />
+
+    <TextView
+        android:id="@+id/genderText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="54dp"
+        android:text="Gender:"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText3" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="19dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ageInput3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/genderText3"
+        app:layout_constraintTop_toBottomOf="@+id/nameInput3">
+
+
+        <RadioButton
+            android:id="@+id/maleRatio3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/femaleRatio3"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/titleText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="40dp"
+        android:text="Modifying Record"
+        app:layout_constraintBottom_toTopOf="@+id/nameInput3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cancel_c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="83dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_send_c3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput3" />
+
+    <TextView
+        android:id="@+id/heightText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="29dp"
+        android:text="Height(cm):"
+        app:layout_constraintBaseline_toBaselineOf="@+id/heightInput3"
+        app:layout_constraintEnd_toStartOf="@+id/heightInput3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_send_c3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cancel_c3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel_c3"
+        app:layout_constraintTop_toTopOf="@+id/btn_cancel_c3" />
+
+    <TextView
+        android:id="@+id/weightText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="14dp"
+        android:text="Weight(kg)"
+        app:layout_constraintBottom_toBottomOf="@+id/weightInput3"
+        app:layout_constraintEnd_toStartOf="@+id/weightInput3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ageText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="74dp"
+        android:text="Age:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ageInput3"
+        app:layout_constraintEnd_toStartOf="@+id/ageInput3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ageInput3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="age"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/heightInput3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ageText3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+    <EditText
+        android:id="@+id/weightInput3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="141dp"
+        android:ems="10"
+        android:hint="weight"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancel_c3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/weightText3"
+        app:layout_constraintTop_toBottomOf="@+id/heightInput3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
